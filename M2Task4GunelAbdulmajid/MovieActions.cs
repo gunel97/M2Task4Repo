@@ -115,8 +115,8 @@ namespace M2Task4GunelAbdulmajid
             PrintGenres();
             Console.WriteLine("Enter the genre name to remove:");
             string genreName = Console.ReadLine();
-            var genre=FindGenre(genreName);
-            if (genre!=null)
+            var genre = FindGenre(genreName);
+            if (genre != null)
             {
                 for (int j = genre.Id; j < _genres.Length - 1; j++)
                 {
@@ -139,14 +139,14 @@ namespace M2Task4GunelAbdulmajid
         public void PrintGenres()
         {
             Console.WriteLine($"{"Id",-4} {"Name",-20}");
-            for (int i=0; i<_sizeGenre; i++)
+            for (int i = 0; i < _sizeGenre; i++)
             {
-                var item=_genres[i];
+                var item = _genres[i];
                 Console.WriteLine(new string('-', 30));
-                Console.WriteLine($"{item.Id, -4} {item.Name,-20}");
+                Console.WriteLine($"{item.Id,-4} {item.Name,-20}");
             }
             Console.WriteLine(new string('-', 30));
-            Console.WriteLine();  
+            Console.WriteLine();
         }
         public bool IsFoundGenre(string genreName)
         {
@@ -176,21 +176,21 @@ namespace M2Task4GunelAbdulmajid
 
             for (int i = 0; i < _sizeMovie; i++)
             {
-                if (_movies[i] == null) 
+                if (_movies[i] == null)
                     continue;
-                PrintMovieById(_movies[i].Id);              
+                PrintMovieById(_movies[i].Id);
             }
             Console.WriteLine(new string('-', 60));
             Console.WriteLine();
         }
         public void PrintMovieById(int id)
         {
-            for(int i=0; i<_sizeMovie; i++)
+            for (int i = 0; i < _sizeMovie; i++)
             {
                 if (_movies[i].Id == id)
                 {
                     Console.WriteLine(new string('-', 60));
-                    Console.WriteLine($"{_movies[i].Id, -4} {_movies[i].Name, -20} {_movies[i].Genre.Name, -10} {_movies[i].Imdb, -5} {_movies[i].CountOfViews}");
+                    Console.WriteLine($"{_movies[i].Id,-4} {_movies[i].Name,-20} {_movies[i].Genre.Name,-10} {_movies[i].Imdb,-5} {_movies[i].CountOfViews}");
                 }
             }
             Console.WriteLine(new string('-', 60));
@@ -365,12 +365,12 @@ namespace M2Task4GunelAbdulmajid
             PrintGenres();
             Console.WriteLine("Enter genre: ");
             string s = Console.ReadLine();
-            Genre genre=FindGenre(s);
+            Genre genre = FindGenre(s);
             if (genre != null)
             {
                 for (int i = 0; i < _sizeMovie; i++)
                 {
-                    if (_movies[i].Genre.Name == s) 
+                    if (_movies[i].Genre.Name == s)
                         PrintMovieById(_movies[i].Id);
                 }
 
@@ -380,8 +380,8 @@ namespace M2Task4GunelAbdulmajid
             {
                 Console.WriteLine($"Genre {s} does not exist");
                 return;
-            }    
-            
+            }
+
         }
     }
 }

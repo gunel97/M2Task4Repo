@@ -21,6 +21,8 @@ namespace M2Task4GunelAbdulmajid
             while (user.UserName == "undefined");
             if (user.Role == Role.Admin)
             {
+                Console.BackgroundColor= ConsoleColor.Red;
+                Console.ForegroundColor= ConsoleColor.Black;
                 Console.WriteLine($"Welcome Admin -  {user.UserName}!");
                 do
                 {
@@ -62,6 +64,8 @@ namespace M2Task4GunelAbdulmajid
             }
             else
             {
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine($"Welcome User - {user.UserName}!");
                 do
                 {

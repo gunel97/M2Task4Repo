@@ -12,3 +12,4 @@ C:\Users\Lenovo\source\repos\M2Task4GunelAbdulmajid\M2Task4GunelAbdulmajid\obj\D
 C:\Users\Lenovo\source\repos\M2Task4GunelAbdulmajid\M2Task4GunelAbdulmajid\obj\Debug\net8.0\M2Task4GunelAbdulmajid.pdb
 C:\Users\Lenovo\source\repos\M2Task4GunelAbdulmajid\M2Task4GunelAbdulmajid\obj\Debug\net8.0\M2Task4GunelAbdulmajid.genruntimeconfig.cache
 C:\Users\Lenovo\source\repos\M2Task4GunelAbdulmajid\M2Task4GunelAbdulmajid\obj\Debug\net8.0\ref\M2Task4GunelAbdulmajid.dll
+C:\Users\Lenovo\source\repos\M2Task4GunelAbdulmajid\M2Task4GunelAbdulmajid\obj\Debug\net8.0\M2Task4GunelAbdulmajid.sourcelink.json
