@@ -8,13 +8,12 @@ namespace M2Task4GunelAbdulmajid
 {
     public class WatchList
     {
-       public WatchList(Movie movie, User user)
+        public WatchList(Movie movie, User user)
         {
             Movie = movie;
             User = user;
         }
         public Movie Movie { get; set; }
         public User User { get; }
-
     }
 }

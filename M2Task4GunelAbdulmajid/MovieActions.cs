@@ -44,6 +44,7 @@ namespace M2Task4GunelAbdulmajid
                 }
             }
         }
+
         public bool IsRepeatedInWatchList(Movie movie, User user)
         {
             for (int i = 0; i < _sizeWatchList; i++)
@@ -55,6 +56,7 @@ namespace M2Task4GunelAbdulmajid
             }
             return false;
         }
+
         public void AddWatchList(User user)
         {
             PrintMovies();
@@ -89,6 +91,7 @@ namespace M2Task4GunelAbdulmajid
                 return;
             }
         }
+
         public void AddGenre()
         {
             Console.WriteLine("Enter new genre: ");
@@ -110,6 +113,7 @@ namespace M2Task4GunelAbdulmajid
                 PrintGenres();
             }
         }
+
         public void RemoveGenre()
         {
             PrintGenres();
@@ -136,6 +140,7 @@ namespace M2Task4GunelAbdulmajid
                 Console.WriteLine("***** - Genre not found! - *****");
             }
         }
+
         public void PrintGenres()
         {
             Console.WriteLine($"{"Id",-4} {"Name",-20}");
@@ -148,6 +153,7 @@ namespace M2Task4GunelAbdulmajid
             Console.WriteLine(new string('-', 30));
             Console.WriteLine();
         }
+
         public bool IsFoundGenre(string genreName)
         {
             for (int i = 0; i < _sizeGenre; i++)
@@ -159,6 +165,7 @@ namespace M2Task4GunelAbdulmajid
             }
             return false;
         }
+
         public Genre FindGenre(string genreName)
         {
             for (int i = 0; i < _sizeGenre; i++)
@@ -170,6 +177,7 @@ namespace M2Task4GunelAbdulmajid
             }
             return null;
         }
+
         public void PrintMovies()
         {
             Console.WriteLine($"{"Id",-4} {"Name",-20} {"Genre",-10} {"Imdb",-5}, Count of views");
@@ -183,6 +191,7 @@ namespace M2Task4GunelAbdulmajid
             Console.WriteLine(new string('-', 60));
             Console.WriteLine();
         }
+
         public void PrintMovieById(int id)
         {
             for (int i = 0; i < _sizeMovie; i++)
@@ -195,6 +204,7 @@ namespace M2Task4GunelAbdulmajid
             }
             Console.WriteLine(new string('-', 60));
         }
+
         public void AddMovie()
         {
             Genre genre;
@@ -239,6 +249,7 @@ namespace M2Task4GunelAbdulmajid
                 Console.WriteLine($"Movie {name} already exists!");
             }
         }
+
         public Movie FindMovie(string movieName)
         {
             for (int i = 0; i < _sizeMovie; i++)
@@ -250,6 +261,7 @@ namespace M2Task4GunelAbdulmajid
             }
             return null;
         }
+
         public void SearchMovie()
         {
             Console.WriteLine("Enter movie name: ");
@@ -268,6 +280,7 @@ namespace M2Task4GunelAbdulmajid
                 return;
             }
         }
+
         public void RemoveMovie()
         {
             PrintMovies();
@@ -292,6 +305,7 @@ namespace M2Task4GunelAbdulmajid
                 return;
             }
         }
+
         public void WatchMovie()
         {
             PrintMovies();
@@ -312,6 +326,7 @@ namespace M2Task4GunelAbdulmajid
                 return;
             }
         }
+
         //public void MostViewMovie()
         //{
         //    int max = 0;
@@ -360,6 +375,7 @@ namespace M2Task4GunelAbdulmajid
 
             }
         }
+
         public void FilterMovieByGenre()
         {
             PrintGenres();

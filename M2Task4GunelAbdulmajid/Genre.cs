@@ -12,11 +12,9 @@ namespace M2Task4GunelAbdulmajid
         public Genre(string name)
         {
             Name = name;
-            Id=_autoIncrementedId++;
+            Id = _autoIncrementedId++;
         }
         public string Name { get; set; }
         public int Id { get; }
-        
-
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("M2Task4GunelAbdulmajid")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0337ba0bf7b2c8c7ef6695ebe5dbb063b434734")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c819c0f922ee3dbcb23e17677b0f9bcdbbe4b639")]
 [assembly: System.Reflection.AssemblyProductAttribute("M2Task4GunelAbdulmajid")]
 [assembly: System.Reflection.AssemblyTitleAttribute("M2Task4GunelAbdulmajid")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

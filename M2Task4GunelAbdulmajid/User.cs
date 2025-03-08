@@ -20,6 +20,5 @@ namespace M2Task4GunelAbdulmajid
         public string UserName { get; }
         public string Password { get; }
         public Role Role { get; }
-       // public WatchListModel WatchList { get; }
     }
 }
